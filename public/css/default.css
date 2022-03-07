@@ -26,9 +26,9 @@ e. Others
 /* a. Webfonts and Icon fonts
  ------------------------------------------------------------------ */
 
-@import url("fonts.css");
+/*@import url("fonts.css");
 @import url("fontello/css/fontello.css");
-@import url("font-awesome/css/font-awesome.min.css");
+@import url("font-awesome/css/font-awesome.min.css");*/
 
 /* ------------------------------------------------------------------
 /* b. Reset
@@ -58,8 +58,7 @@ time, mark, audio, video {
    background: transparent;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
+article,aside,details,figcaption,figure,header,hgroup,menu,nav,section {
    display: block;
 }
 
@@ -159,7 +158,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
    color: #313131;
-	font-family: 'opensans-bold', sans-serif;
+	font-family: 'Times New Roman', sans-serif;
    font-weight: normal;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
@@ -171,7 +170,7 @@ h5 { font-size: 18px; line-height: 30px; }
 h6 { font-size: 14px; line-height: 30px; }
 .subheader { }
 
-p { margin: 0 0 30px 0; }
+p { margin: 0 0 15px 0; }
 p img { margin: 0; }
 p.lead {
    font: 19px/36px 'opensans-light', sans-serif;
@@ -602,7 +601,7 @@ input[type="checkbox"] { display: inline; }
 
 .narrow .row { max-width: 980px; }
 
-.row .row { width: auto; max-width: none; margin: 0 -20px; }
+.row .row { width: auto; max-width: none; margin: 0 -10px; }
 
 /* row clearing */
 .row:before,

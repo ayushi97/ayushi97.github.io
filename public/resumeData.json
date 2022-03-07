@@ -1,21 +1,21 @@
 {
   "main": {
-    "name": "Tim Baker",
-    "occupation": "(Your Occupation Here)",
+    "name": "Ayushi Sharma",
+    "occupation": "Data Analyst",
     "description": "Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
     "image": "profilepic.jpg",
     "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
+    "email": "aysharma1997@gmail.com",
+    "phone": "+91 9566200778",
     "address": {
       "street": "(Your Street)",
       "city": "(Your City)",
       "state": "(Your State)",
       "zip": "(Your Zip/Postal Code)"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload": "http://timbakerdev.com",
+    "website": " ",
+    "resumedownload": " ",
     "social": [
       {
         "name": "facebook",
@@ -65,13 +65,13 @@
         "company": "Awesome Design Studio",
         "title": "Senior UX God ",
         "years": "March 2010 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
       },
       {
         "company": "Super Cool Studio",
         "title": "Junior bug fixer",
         "years": "March 2007 - February 2010",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Super Cool Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
       }
     ],
     "skills": [

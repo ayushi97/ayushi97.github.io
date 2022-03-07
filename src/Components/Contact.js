@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
 class Contact extends Component {
   render() {
@@ -109,6 +110,11 @@ class Contact extends Component {
                   </ul>
 		         </div>
             </aside>
+      </div>
+
+      
+      <div className="button_contact">
+      <a className="smoothscroll"  href="#home"><BsFillArrowUpCircleFill /></a>
       </div>
    </section>
     );

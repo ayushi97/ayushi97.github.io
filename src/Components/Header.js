@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Particles from "react-tsparticles";
+import Typewriter from 'typewriter-effect';
+import { BsArrowDownCircleFill } from "react-icons/bs";
 
 class Header extends Component {
   render() {
@@ -9,8 +12,8 @@ class Header extends Component {
       var description= this.props.data.description;
       var city= this.props.data.address.city;
       var networks= this.props.data.social.map(function(network){
-        return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
-      })
+         return <li key={network.name}><a href={network.url}></a></li>
+       })
     }
 
     return (
@@ -34,7 +37,83 @@ class Header extends Component {
 
       <div className="row banner">
          <div className="banner-text">
-            <h1 className="responsive-headline">I'm {name}.</h1>
+         <div className = "Particles">
+         <Particles
+         options={{ interactivity: {
+            events: {
+               onClick: {
+                  enable: true,
+                  mode: "bubble",
+               },
+              onhover: {
+                enable: true,
+                mode: "bubble",
+              },
+              resize: true,
+            },
+            modes: {
+              bubble: {
+                distance: 200,
+                size: 17,
+                
+                opacity: 0.8,
+                speed: 2,
+              },
+            },
+         },
+            particles: {
+            color: {
+               value: ['#0be779', '#008a3e', '#a3ffce']
+            },
+
+            line_linked: {
+               enable: true,
+               distance: 450,
+               color: '#ffffff',
+               opacity: 0.1,
+               width: 1,
+             },
+
+            move: {
+               enable: true,
+               speed: 1,
+               direction: 'none',
+               random: true,
+               straight: false,
+               bounce: true,
+            },
+            number: {
+               value: 20,
+            },
+            opacity: {
+               value: 0.5,
+               random: false,
+               anim: {
+                 enable: true,
+                 speed: 0.2,
+                 opacity_min: 0.3,
+                 sync: true,
+               },
+            },
+            size: {
+               value: 50,
+               random: true,
+            },
+         } 
+      }}
+   /></div>
+      <h1 className = "responsive-headline">
+         <Typewriter 
+            onInit={(typewriter) => {
+            typewriter.typeString('I\'m Ayushi Sharma.')
+            .pauseFor(1000)
+            .deleteAll()
+            .typeString('I\'m Ayushi Sharma.')
+            .pauseFor(1000)
+            .start();
+
+      }}/>
+      </h1> 
             <h3>I'm a {city} based <span>{occupation}</span>. {description}.</h3>
             <hr />
             <ul className="social">
@@ -43,13 +122,15 @@ class Header extends Component {
          </div>
       </div>
 
+      
       <p className="scrolldown">
-         <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
+         
+      <a className="smoothscroll" title="Back to Top" href="#about"><BsArrowDownCircleFill /></a>
       </p>
 
    </header>
     );
   }
 }
-
+//https://react-icons.github.io/react-icons
 export default Header;

@@ -1,34 +1,68 @@
 import React, { Component } from 'react';
+import { BsArrowDownCircleFill } from "react-icons/bs";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 
 class Testimonials extends Component {
   render() {
-
-    if(this.props.data){
-      var testimonials = this.props.data.testimonials.map(function(testimonials){
-        return  <li key={testimonials.user}>
-            <blockquote>
-               <p>{testimonials.text}</p>
-               <cite>{testimonials.user}</cite>
-            </blockquote>
-         </li>
-      })
-    }
+   const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows : true,
+      className : "slides",
+      //centerMode: true
+      centerPadding: "100px"
+    };
 
     return (
       <section id="testimonials">
       <div className="text-container">
          <div className="row">
 
-            <div className="two columns header-col">
-               <h1><span>Client Testimonials</span></h1>
+         <div className="twelve columns collapsed">
+               <h3 className = "title_test"><span>Check Out Some of My Works.</span></h3>
             </div>
 
-            <div className="ten columns flex-container">
-                  <ul className="slides">
-                      {testimonials}
-                  </ul>
-               </div>
+          
+
             </div>
+
+            <div className = "Slider_Resume_TEST">
+        <Slider {...settings}>
+          <div>
+            <h3 className = "heading_projects">Awesome Design Studio</h3>
+            <p className="projects">Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. </p>
+          </div>
+          <div>
+            <h3 className = "heading_projects" >Awesome Design Studio</h3>
+            <p className="projects">Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. </p>
+          </div>
+          <div>
+            <h3 className = "heading_projects">Awesome Design Studio</h3>
+            <p className="projects">Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. </p>
+          </div>
+          <div>
+            <h3 className = "heading_projects">Awesome Design Studio</h3>
+            <p className="projects">Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. </p>
+          </div>
+          <div>
+            <h3 className = "heading_projects">Awesome Design Studio</h3>
+            <p className="projects">Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. </p>
+          </div>
+          <div>
+            <h3 className = "heading_projects">Awesome Design Studio</h3>
+            <p className="projects">Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. Awesome Design Studio - Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know. </p>
+          </div>
+        </Slider>
+
+
+</div>
+
          </div>
    </section>
     );

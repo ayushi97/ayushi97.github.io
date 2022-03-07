@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { BsArrowDownCircleFill } from "react-icons/bs";
+
 
 class Footer extends Component {
   render() {
@@ -10,7 +12,7 @@ class Footer extends Component {
     }
 
     return (
-      <footer>
+      <section id="footer">
 
      <div className="row">
         <div className="twelve columns">
@@ -24,9 +26,11 @@ class Footer extends Component {
            </ul>
 
         </div>
-        <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open"></i></a></div>
+        <div className="button_footer">
+        <a className="smoothscroll"  href="#home"><BsArrowDownCircleFill /></a>
+      </div>
      </div>
-  </footer>
+  </section>
     );
   }
 }
